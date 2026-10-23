@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fish Nkalanga — Player One</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="xp"></div>
+<main>
+
+<div class="title">
+  <svg class="sprite" id="sprite" viewBox="0 0 8 8" aria-hidden="true"></svg>
+  <h1>FISH<br>NKALANGA</h1>
+  <p class="px" style="font-size:10px;color:var(--blue)">DEVELOPER · GABORONE · BOTSWANA</p>
+  <p class="muted">I build software that works when the internet doesn’t.</p>
+  <a class="btn" href="#story">PRESS START <span class="blink">▮</span></a>
+</div>
+
+<section id="story">
+  <h2>▶ THE STORY SO FAR</h2>
+
+  <div class="box">
+    <span class="lvl">LEVEL 1</span>
+    <p>I started out curious about how things work under the hood. That led me to the University of Botswana, where I finished four years of Computer Science.</p>
+    <p>Along the way I picked up Rust, C, Java and Python, plus Red Hat and Cisco courses on Linux and cybersecurity.</p>
+  </div>
+
+  <div class="box">
+    <span class="lvl">LEVEL 2</span>
+    <p>Real-world mode. I spent seven months at Technology Affiliates Group doing data analysis, then joined Maru Quick, where I shipped a fintech mobile app and the USSD backend that lets feature phones use it.</p>
+    <p>That taught me the big lesson: software only counts when real people in Botswana can use it on real networks.</p>
+  </div>
+
+  <div class="box">
+    <span class="lvl">LEVEL 3</span>
+    <p>Now I focus on offline-first, distributed and privacy-first software. My final year project, ShieldMesh, lets phones send encrypted messages with no internet at all.</p>
+    <p>I also run Thebe Technologies, and I’m learning game development with Raylib because games are where all the fun problems live.</p>
+  </div>
+
+  <div class="box">
+    <span class="lvl">NEXT LEVEL</span>
+    <p>I’m looking for my next team. Somewhere I can ship things, learn fast, and keep building for places where connectivity is a luxury.</p>
+    <a class="btn" href="#contact">INSERT COIN</a>
+  </div>
+</section>
+
+<section>
+  <h2>▶ SIDE QUESTS</h2>
+  <div class="grid">
+    <div class="q"><b>SHIELDMESH</b>Encrypted peer-to-peer mesh messaging that works offline.<span class="tag">RUST · P2P · CRYPTO</span></div>
+    <div class="q"><b>PAYMENT LEDGER</b>A Pix/Visa-style payment system with a double-entry ledger, built from scratch.<span class="tag">RUST · LEDGERS</span></div>
+    <div class="q"><b>CHRONOS</b>One Rust core shared by Android and iOS apps through UniFFI.<span class="tag">RUST · UNIFFI</span></div>
+    <div class="q"><b>RAYLIB</b>Game loops, rendering and graphics, learned from first principles.<span class="tag">C · RAYLIB · IN PROGRESS</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>▶ INVENTORY</h2>
+  <div class="inv">
+    <span>Rust</span><span>C</span><span>Java</span><span>Python</span><span>TypeScript</span><span>SQL</span>
+    <span>React</span><span>NestJS</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span><span>Linux</span><span>AWS</span>
+    <span class="new">Raylib ✦</span><span class="new">Distributed systems ✦</span>
+  </div>
+</section>
+
+<section id="bonus">
+  <h2>▶ BONUS STAGE</h2>
+  <p>Dodge the falling bugs. Tap or drag on a phone, or use ← → on a keyboard.</p>
+  <canvas id="game" width="320" height="240" role="img" aria-label="Mini game: move the player to dodge falling bugs"></canvas>
+</section>
+
+<section>
+  <h2>▶ SAVE FILE</h2>
+  <div class="box">
+    <p>Take my resume with you. Open it and print to PDF if you need one.</p>
+    <button class="btn" id="save" hidden>SAVE GAME ▼</button>
+    <p id="savemsg" class="px" style="font-size:10px;margin:14px 0 0"></p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>▶ INSERT COIN TO CONTINUE</h2>
+  <div class="box cl">
+    <p>Email: <a href="mailto:jimmynkalanga@gmail.com">jimmynkalanga@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/KitsoJimmyNkalanga" rel="noopener">github.com/KitsoJimmyNkalanga</a></p>
+    <p>Phone: <a href="tel:+26772602693">+267 72602693</a> · <a href="tel:+26773350516">+267 73350516</a></p>
+    <p style="margin:0">Location: Gaborone, Botswana</p>
+  </div>
+</section>
+
+</main>
+<footer>© 2026 FISH NKALANGA · HAND-CODED, NO FRAMEWORK</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
