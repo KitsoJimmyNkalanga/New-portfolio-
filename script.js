@@ -1,3 +1,5 @@
+var MAIL=["jimmynkalanga","gmail.com"].join("@");
+
 (function(){
   var map=["..RRRR..",".RRRRRR.","BBBBBBBB","BWKBWKBB","BBBBBBBB","BBKKKKBB",".BBBBBB.","..R..R.."];
   var col={R:"#7a1020",B:"#2447c9",W:"#ffffff",K:"#111111"};
@@ -8,6 +10,7 @@
   function u(){var d=document.documentElement,m=d.scrollHeight-window.innerHeight;xp.style.width=(m>0?(window.scrollY/m)*100:0)+"%";}
   window.addEventListener("scroll",u,{passive:true});u();
 })();
+
 (function(){
   var cv=document.getElementById("game"),c=cv.getContext("2d"),W=320,H=240;
   var st="idle",px=152,bugs=[],score=0,lives=3,t=0,best=0,k={l:0,r:0};
@@ -19,7 +22,6 @@
   window.addEventListener("keydown",function(e){
     var d=e.key==="ArrowLeft"||e.key==="a"?"l":e.key==="ArrowRight"||e.key==="d"?"r":"";
     if(d){k[d]=1;if(st==="play")e.preventDefault();}
-    else if(e.key===" "&&st!=="play"&&document.activeElement===document.body){}
   });
   window.addEventListener("keyup",function(e){
     if(e.key==="ArrowLeft"||e.key==="a")k.l=0;
@@ -57,13 +59,18 @@
 })();
 
 (function(){
+  var a=document.getElementById("mail");
+  a.href="mailto:"+MAIL;a.textContent=MAIL;
+})();
+
+(function(){
   var b=document.getElementById("save"),m=document.getElementById("savemsg");
   var RESUME=`<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Kitso Nkalanga — Resume</title>
 <style>body{font-family:Arial,sans-serif;font-size:11pt;color:#111;max-width:780px;margin:30px auto;padding:0 24px;line-height:1.5}
 h1{margin:0;font-size:24pt}h2{font-size:10pt;letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid #7a1020;color:#7a1020;margin-top:22px}
 .s{color:#555;margin-bottom:8px}li{margin-bottom:3px}.r{display:flex;justify-content:space-between;font-weight:bold}</style></head><body>
 <h1>Kitso Nkalanga</h1><div class="s">Software Developer · Gaborone, Botswana</div>
-<div>jimmynkalanga@gmail.com · +267 72602693 · +267 73350516 · github.com/KitsoJimmyNkalanga</div>
+<div>${MAIL} · github.com/KitsoJimmyNkalanga</div>
 <h2>Profile</h2><p>Software developer with experience shipping production mobile apps and USSD backends in Botswana. Comfortable from systems-level Rust and C to React and NestJS. Focused on offline-first, distributed and privacy-focused software. Exploring game development with Raylib.</p>
 <h2>Experience</h2>
 <div class="r"><span>Software Developer — Maru Quick (Pty) Ltd</span><span>Mar 2026 – Jun 2026</span></div>
