@@ -78,9 +78,11 @@ h1{margin:0;font-size:24pt}h2{font-size:10pt;letter-spacing:.1em;text-transform:
 <div class="r"><span>Industrial Attachment, Data Analyst — Technology Affiliates Group</span><span>Jan 2025 – Jul 2025</span></div>
 <ul><li>Seven-month attachment as part of the UB Computer Science programme: data analysis and internal technology projects</li></ul>
 <h2>Projects</h2>
-<p><b>ShieldMesh</b> (Rust) — Offline-first peer-to-peer encrypted mesh messaging. Final year project.</p>
-<p><b>Payment Ledger System</b> (Rust) — Pix/Visa-style payment system with a double-entry ledger and transaction engine.</p>
-<p><b>Project Chronos</b> (Rust, UniFFI) — Android and iOS app sharing one Rust core.</p>
+<p><b>ShieldMesh</b> (Rust) — Offline-first peer-to-peer encrypted mesh messaging. Final year project. github.com/KitsoJimmyNkalanga/SHIELDMESH</p>
+<p><b>Decision Journal</b> (Rust, Axum, SQLite, React) — Local-first tool that logs why code decisions were made, via a git commit hook, CLI and REST API. github.com/KitsoJimmyNkalanga/decision-journal</p>
+<p><b>Guidance</b> — AI-powered educational chatbot. In progress. github.com/KitsoJimmyNkalanga/GUIDANCE-V2</p>
+<p><b>Payment Ledger System</b> (Rust) — Pix/Visa-style payment system with a double-entry ledger and transaction engine. In progress, repo coming soon.</p>
+<p><b>Project Chronos</b> (Rust, UniFFI) — Android and iOS app sharing one Rust core. In progress, repo coming soon.</p>
 <p><b>Raylib Game Development</b> (C) — Rendering, game loops and graphics from first principles. In progress.</p>
 <h2>Skills</h2>
 <p><b>Languages:</b> Rust, C, Java, Python, TypeScript, SQL<br><b>Web and mobile:</b> React, NestJS, Node.js, Android, USSD, REST<br><b>Infrastructure:</b> PostgreSQL, Redis, Docker, GitHub Actions, AWS, Linux</p>
